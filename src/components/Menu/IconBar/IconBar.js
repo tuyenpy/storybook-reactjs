@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { } from 'react-router-dom';
 import './IconBar.css';
 
@@ -11,15 +11,28 @@ import {
     faTrash
 } from '@fortawesome/free-solid-svg-icons';
 
+const icons = [
+    faHome,
+    faSearch,
+    faEnvelope,
+    faGlobe,
+    faTrash
+];
+
 const IconBar = () => {
+    let [state, setState] = useState({0: true});
+    const changeStyle = (index) => () => setState({ [index]: true })
     return <ul className="IconBar">
-        <li className="active"><FontAwesomeIcon icon={faHome} /></li>
-        <li><FontAwesomeIcon icon={faSearch} /></li>
-        <li> <FontAwesomeIcon icon={faEnvelope} /></li>
-        <li><FontAwesomeIcon icon={faGlobe} /></li>
-        <li><FontAwesomeIcon icon={faTrash} /></li>
+        {
+            icons.map((element, index) =>
+                <li
+                    className={state[index] && "active"}
+                    onClick={changeStyle(index)}
+                >
+                    <FontAwesomeIcon icon={element} />
+                </li>)
+        }
     </ul>
 }
-
 
 export default IconBar;
