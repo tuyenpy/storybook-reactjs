@@ -23,7 +23,7 @@ const Tabs = () => {
                 tabs.map(({ city, description }) =>
                     <button
                         onClick={changeContent(city)}
-                        className={state[city] ? "TabsButton active" : "TabsButton"}
+                        className={state[city] && "active"}
                     >
                         {city}
                     </button>)

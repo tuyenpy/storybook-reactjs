@@ -7,7 +7,7 @@
     background-color: #f1f1f1;
 }
 
-.TabsButton {
+.Tabs button {
     background-color: inherit;
     border: none;
     outline: none;
@@ -17,13 +17,13 @@
     font-size: 17px;
 }
 
-.TabsButton:hover {
+.Tabs button:hover {
     background-color: #ddd;
 }
 
 /* Create an active/current Tabslink class */
 
-.active {
+.Tabs button.active {
     background-color: #ccc;
 }
 
