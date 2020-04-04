@@ -1,0 +1,31 @@
+.IconBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #555;
+    padding: 0;
+    /* width: 100%; */
+    /* overflow: auto; */
+}
+
+.IconBar li {
+    flex: 1;
+    padding: 12px 0;
+    list-style-type: none;
+    transition: all 0.3s ease;
+    color: white;
+    text-align: center;
+    font-size: 36px;
+}
+
+.IconBar li:hover {
+    background-color: #000;
+}
+
+.IconBar li:active {
+    background-color: #4CAF50;
+}
+
+.active {
+    background-color: #4CAF50;
+}
