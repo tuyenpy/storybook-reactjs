@@ -22,10 +22,6 @@
     background-color: #000;
 }
 
-.IconBar li:active {
-    background-color: #4CAF50;
-}
-
-.active {
+.IconBar li.active {
     background-color: #4CAF50;
 }
