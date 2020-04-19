@@ -1,19 +1,12 @@
 import React from 'react';
-import {
-  BrowserRouter
-} from 'react-router-dom';
-// import logo from './logo.svg';
-// import './App.css';
-import IconBar from '../Menu/IconBar';
-
+import './App.css';
+import HoverSlidenavButton from '../Menu/HoverSlidenavButton';
 
 function App() {
   return (
-    <BrowserRouter>
       <div className="App">
-        <IconBar />
+        <HoverSlidenavButton />
       </div>
-    </BrowserRouter>
   );
 }
 
