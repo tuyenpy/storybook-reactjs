@@ -1,0 +1,50 @@
+.ToggleSwitch {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
+
+.ToggleSwitch label input{
+    display: none;
+}
+
+.ToggleSwitch label{
+    display: inline-block;
+    position: relative;
+    width: 38px;
+    height: 20px;
+}
+
+.ToggleSwitch label span{
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #DDDDDD;
+    border-radius: 10px;
+
+}
+.ToggleSwitch label span::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 18px;
+    height: 18px;
+    background-color: #FFFFFFfa;
+    border-radius: 9px;
+    box-shadow: 0.5px 0.5px 2px #eeeeee;
+    transition: .5s;
+}
+
+.ToggleSwitch label input:checked + span{
+    background-color: #6EDC5F;
+}
+
+.ToggleSwitch label input:checked + span::before{
+    transform: translateX(18px);
+    background-color: #FFFFFF;
+}

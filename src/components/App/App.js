@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import HoverSlidenavButton from '../Menu/HoverSlidenavButton';
+import LoginForm from '../Form/LoginForm';
 
 function App() {
   return (
       <div className="App">
-        <HoverSlidenavButton />
+        <LoginForm />
       </div>
   );
 }

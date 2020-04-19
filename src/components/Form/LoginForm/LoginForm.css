@@ -1,0 +1,122 @@
+.LoginForm-container {
+    position: fixed;
+    background-color: #00000066;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.LoginForm {
+    position: relative;
+    width: 50%;
+    background-color: white;
+    margin: 30px auto;
+    padding: 12px 16px;
+    box-sizing: border-box;
+}
+
+.LoginForm .avatar {
+    margin-bottom: 12px;
+}
+
+.LoginForm .avatar img {
+    display: block;
+    width: 50%;
+    height: 50%;
+    background-color: #eeeeee;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.LoginForm .avatar button {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    border: 0px;
+    background-color: #eeeeee00;
+}
+
+.LoginForm .avatar button:hover {
+    color: #ff0000;
+}
+
+.login input[type="text"], .login input[type="password"] {
+    display: block;
+    width: 100%;
+    border: 1px solid #eeeeeeee;
+    padding: 4px 10px;
+    transition: .3s;
+    margin-bottom: 10px;
+    font-size: 10px;
+    color: #333333cc;
+    font-weight: 300;
+}
+
+.login input:focus {
+    box-shadow: 1px 1px 10px #eeeeee, -1px -1px 10px #eeeeee;
+}
+
+.login label {
+    font-size: 10px;
+    color: #000000cc;
+}
+
+.login ::placeholder {
+    font-size: 6px;
+}
+
+.login button {
+    border: 0px;
+    background-color: #41a145cc;
+    color: white;
+    font-size: 8px;
+    padding: 10px 16px;
+    width: 100%;
+}
+
+.login button:hover {
+    background-color: #41a145;
+}
+
+.login .remember {
+    display: flex;
+    align-items: flex-end;
+    padding: 6px 0px;
+}
+
+.login .remember label {
+    font-size: 8px;
+}
+
+.LoginForm .cancel {
+    border-top: 1px solid #eeeeeecc;
+    padding: 12px 0px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.LoginForm .cancel button {
+    color: #ffffffcc;
+    font-size: 8px;
+    padding: 7px 16px;
+    border: 0px;
+    background-color: #ec5252;
+}
+
+.LoginForm .cancel button:hover {
+    color: #ffffff;
+    background-color: #ee3d3d;
+}
+
+.LoginForm .cancel span {
+    font-size: 8px;
+}
+
+@media screen and (max-width: 600px) {
+    .LoginForm {
+        width: 60%;
+        transition: .5s;
+    }
+}

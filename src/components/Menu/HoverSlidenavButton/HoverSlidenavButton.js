@@ -19,8 +19,7 @@ const HoverSlidenavButton = ({...props}) => {
                         lists.map(({label, path}) => <li>
                             <a href={path}>{label}</a>
                         </li>)
-                    }
-                    
+                    }                    
                 </ul>
             </div>
         </div>
